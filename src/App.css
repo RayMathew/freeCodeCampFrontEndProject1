@@ -1,33 +1,119 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.75em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    animation: colorchange 50s infinite;
+    -webkit-animation: colorchange 50s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.transition{
+    transition: 500ms;
 }
 
-.App-link {
-  color: #61dafb;
+.fadein {
+    opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fadeout{
+    opacity: 0;
+}
+
+#quote-wrapper {
+    margin: auto;
+    padding: 7% 0;
+    width: 70%;
+    position: relative;
+}
+
+#quote-box {
+    padding: 20px 0;
+    color: white;
+}
+
+.quill {
+    position: absolute;
+    right: -20px;
+    top: 145px;
+}
+
+.buttons-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    cursor: pointer;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#new-quote {
+    text-align: right;
+}
+
+@keyframes colorchange {
+    0% {
+        background: #f56161;
+    }
+
+    25% {
+        background: #ffeb3b;
+    }
+
+    50% {
+        background: #2196f3;
+    }
+
+    75% {
+        background: #4caf50;
+    }
+
+    100% {
+        background: #f56161;
+    }
+}
+
+@-webkit-keyframes colorchange
+
+/* Safari and Chrome - necessary duplicate */
+    {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: #cabd52;
+    }
+
+    50% {
+        background: blue;
+    }
+
+    75% {
+        background: green;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+#author {
+    text-align: right;
+    margin-top: 8px;
+    font-size: 0.8em;
+    font-weight: lighter;
 }
