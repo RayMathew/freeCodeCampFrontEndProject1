@@ -1,4 +1,4 @@
-FreeCodeCamp frontend challenge project 1.
+FreeCodeCamp frontend challenge project 1 - Random Quote Machine.
 
 Description: https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine/
 
